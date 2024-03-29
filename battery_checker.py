@@ -3,7 +3,7 @@ import os
 import psutil
 import ctypes
 
-#Creates a starting conformation window
+#Creates a starting confirmation window
 ctypes.windll.user32.MessageBoxW(0,u"Close this window now",u"Programm started",16) 
 timer = 0
 battery = psutil.sensors_battery()
@@ -22,7 +22,7 @@ def main():
     while battery.power_plugged == False:
         if battery.percent < 60 and shown == False:
             timerPrint = timer/60
-            #If you want to display something else edit or display it in here or create a additional window
+            #If you want to display something else edit it in here or create a additional window to display additional information
             ctypes.windll.user32.MessageBoxW(0, u"Change battery now \n After "+str(timerPrint)+ "minutes of working 60 Percent has been reached.", u"Important Message",16)  
             shown = True
             break
