@@ -1,3 +1,2 @@
 # Battery-Checker
-This python programm gives a warning when your laptop battery is going to the 50 % mark so you can exchange your battery if you have a additional one like me.
-This programm gives you some additional information like runtime if but what you would like to display is up to you.
+This python programm runs in the background and checks every minute whether your laptop is charging or not and if not then he checks every minute whether it is near 50% so you can perhabs exchange it with a another one.
